@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  smtp4dev:
+    image: rnwood/smtp4dev:v3
+    ports:
+      - "25:25" # SMTPのリッスンポートを25にマップします
+      - "3000:80" # smtp4devのWebUIのアクセスポート
